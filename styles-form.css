@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(209, 209, 209);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  color: rgb(58, 56, 56);
+}
+h1 {
+  font-family: helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 36px;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  cursor: default;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  /* inherit hereda lo ultimo que le dije que haga */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.thanks-font {
+  font-family: helvetica, sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  padding-top: 10px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-position {
+  align-items: center;
+  background-color: rgb(58, 57, 57);
+  margin: auto;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  justify-self: start;
+}
+.font-form {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+
+  color: whitesmoke;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+}
+
+.nav {
+  top: 0;
+  position: fixed;
+  height: 50px;
+  background-color: white;
+  width: 100%;
+  flex: content;
+}
+.nav-content {
+  margin: 0 auto;
+  max-width: 960px;
+  height: 50px;
+  display: flex;
+  align-items: center; /* aligns on the secondary axis */
+}
+.nav-item {
+  margin-right: 10px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(67, 62, 62);
+}
+.nav-item.active {
+  text-decoration: underline;
+  cursor: default;
+}
+a.nav-item:link,
+a.nav-item:active,
+a.nav-item:visited {
+  text-decoration: none;
+  color: rgb(67, 62, 62);
+}
+a.nav-item:hover {
+  text-decoration: underline;
+  color: darkgrey;
+}
+
+.fix-nav-space {
+  margin-top: 50px;
+}
+.button {
+  border: none;
+  padding-top: 10px;
+}
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+.text-area {
+  width: 100%;
+  max-height: 150px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+span {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+}
